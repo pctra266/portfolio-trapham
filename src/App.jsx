@@ -6,6 +6,7 @@ import Title from "./Components/Title/Title";
 import About from "./Components/About/About";
 import SeriousProject from "./Components/SeriousProject/SeriousProject";
 import BrainrotProject from "./Components/BrainrotProject/BrainrotProject";
+import Contact from "./Components/Contact/Contact";
 
 const App = () => {
   return (
@@ -27,6 +28,8 @@ const App = () => {
           subtitle="I have fun with it, but it no value"
         />
         <BrainrotProject />
+        <Title title="Contact Me" subtitle="Get in touch with me" />
+        <Contact />
       </div>
     </div>
   );

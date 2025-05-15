@@ -51,3 +51,14 @@
   margin-right: 10px;
   border: 4px solid #212ea0;
 }
+
+.brainrot-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.brainrot-info h3 {
+  color: #212ea0;
+}
