@@ -1,35 +1,38 @@
 import React from "react";
 import Navbar from "./Components/NavBar/Navbar";
 import Space from "./Components/Space/Space";
-import Website from "./Components/Website/Website";
+import Education from "./Components/Education/Education";
 import Title from "./Components/Title/Title";
 import About from "./Components/About/About";
-import SeriousProject from "./Components/SeriousProject/SeriousProject";
-import BrainrotProject from "./Components/BrainrotProject/BrainrotProject";
+import Skills from "./Components/Skills/Skills";
+import Project from "./Components/Project/Project";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Space />
-
       <div className="container">
-        <Title title="Website" subtitle="How it make" />
-        <Website />
         <About />
+
+        <Title title="Skills" subtitle="My current skills, most use" />
+        <Skills />
+
         <Title
-          title="Serious Project"
-          subtitle="I force to do it, otherwise I have to relearn "
-        />
-        <SeriousProject />
-        <Title
-          title="Brainrot Project"
+          title="My Project"
           subtitle="I have fun with it, but it no value"
         />
-        <BrainrotProject />
+        <Project />
+
+        <Title title="Education" subtitle="My certificate and education" />
+        <Education />
+
         <Title title="Contact Me" subtitle="Get in touch with me" />
         <Contact />
+
+        <Footer />
       </div>
     </div>
   );

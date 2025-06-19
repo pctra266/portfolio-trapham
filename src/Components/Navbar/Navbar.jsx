@@ -17,10 +17,10 @@ const Navbar = () => {
       </div>
       <ul>
         <li>Home</li>
-        <li>Website</li>
         <li>About me</li>
-        <li>Serious Project</li>
-        <li>Brainrot Project</li>
+        <li>Skills</li>
+        <li>Project</li>
+        <li>Education</li>
         <li>
           <button className="btn">Contact me</button>
         </li>
