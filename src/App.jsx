@@ -1,13 +1,13 @@
 import React from "react";
-import Navbar from "./Components/NavBar/Navbar";
-import Space from "./Components/Space/Space";
-import Education from "./Components/Education/Education";
-import Title from "./Components/Title/Title";
+import Navbar from "./Components/Navbar/Navbar.jsx";
+import Space from "./Components/Space/Space.jsx";
+import Education from "./Components/Education/Education.jsx";
+import Title from "./Components/Title/Title.jsx";
 import About from "./Components/About/About";
-import Skills from "./Components/Skills/Skills";
-import Project from "./Components/Project/Project";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
+import Skills from "./Components/Skills/Skills.jsx";
+import Project from "./Components/Project/Project.jsx";
+import Contact from "./Components/Contact/Contact.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 
 const App = () => {
   return (
