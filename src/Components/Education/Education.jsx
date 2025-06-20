@@ -11,16 +11,51 @@ const Website = () => {
       <div className="website">
         <img src={web_1} />
         <div className="caption">
-          <img src={front_end} alt="" />
-          <p>Frontend</p>
+          <p>Top 30 School Rank 2022</p>
+          <p>GPA: 8.65/10</p>
+          <p>Four-time Honorable Student (FA23, SP24, SU24, FA24)</p>
         </div>
       </div>
 
       <div className="website">
         <img src={web_2} />
         <div className="caption">
-          <img src={back_end} alt="" />
-          <p>Backend</p>
+          <p>
+            {" "}
+            <a
+              target="_blank"
+              href="https://www.coursera.org/account/accomplishments/specialization/IEX59IY3GYFQ"
+            >
+              CertNexus Certified Ethical Emerging Technologist Specialization
+            </a>{" "}
+          </p>
+          <p>
+            {" "}
+            <a
+              target="_blank"
+              href="https://www.coursera.org/account/accomplishments/specialization/9AAFIG8IE9X1"
+            >
+              Software Development Lifecycle Specialization
+            </a>{" "}
+          </p>
+          <p>
+            {" "}
+            <a
+              target="_blank"
+              href="https://www.coursera.org/account/accomplishments/specialization/Q6PJ5ANLPBHG"
+            >
+              Basics of Web Development & Coding Specialization
+            </a>{" "}
+          </p>
+          <p>
+            {" "}
+            <a
+              target="_blank"
+              href="https://www.coursera.org/account/accomplishments/specialization/3FK8AJ2PFG7A"
+            >
+              Academic Skills for University Success Specialization
+            </a>{" "}
+          </p>
         </div>
       </div>
     </div>

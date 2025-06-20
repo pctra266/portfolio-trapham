@@ -1,0 +1,38 @@
+.footer {
+    text-align: center;
+  }
+  
+  .footer hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin-bottom: 30px;
+  }
+  
+  .footer-col {
+    margin-bottom: 20px;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-col ul li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-col ul li:hover {
+    color: #212ea0;
+  }
+  
+  .footer-col p {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+  }
+  

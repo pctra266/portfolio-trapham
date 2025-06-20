@@ -31,10 +31,10 @@ const BrainrotProject = () => {
               <div className="brainrot-info">
                 <img src={brainrot1} alt="" />
                 <div>
-                  <h3>Emu Etori 1</h3>
+                  <h3>Bright Town Study</h3>
                   <span>
                     <a
-                      href="OldSource/BrainrotProject/emuotori.html"
+                      href="https://brighttownstudy.netlify.app"
                       target="_blank"
                     >
                       Try it now
@@ -42,9 +42,47 @@ const BrainrotProject = () => {
                   </span>
                 </div>
               </div>
+              <p>React, Tailwindcss project about learning social media</p>
+            </div>
+          </li>
+          <li>
+            <div className="slide">
+              <div className="brainrot-info">
+                <img src={brainrot1} alt="" />
+                <div>
+                  <h3>BusSystem</h3>
+                  <span>
+                    <a
+                      href="https://github.com/pctra266/BusSystem"
+                      target="_blank"
+                    >
+                      Github Link
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <p>JSP/Servlet java web about manage bus schedule</p>
+            </div>
+          </li>
+          <li>
+            <div className="slide">
+              <div className="brainrot-info">
+                <img src={brainrot1} alt="" />
+                <div>
+                  <h3>DrivingSkillCert</h3>
+                  <span>
+                    <a
+                      href="https://github.com/pctra266/DrivingSkillCert"
+                      target="_blank"
+                    >
+                      Github Link
+                    </a>
+                  </span>
+                </div>
+              </div>
               <p>
-                lots of otori emus, click to get more otori emus, click on new
-                emus to get more otori emus
+                WPF C#/.net project about exam and manage driving skill
+                certificate.
               </p>
             </div>
           </li>
@@ -53,44 +91,18 @@ const BrainrotProject = () => {
               <div className="brainrot-info">
                 <img src={brainrot1} alt="" />
                 <div>
-                  <h3>Emu Etori 2</h3>
-                  <span>30 minutes</span>
+                  <h3>ProductsMaintainManagement</h3>
+                  <span>
+                    <a
+                      href="https://github.com/pctra266/ProductsMaintainManagement"
+                      target="_blank"
+                    >
+                      Github Link
+                    </a>
+                  </span>
                 </div>
               </div>
-              <p>
-                lots of otori emus, click to get more otori emus, click on new
-                emus to get more otori emus
-              </p>
-            </div>
-          </li>
-          <li>
-            <div className="slide">
-              <div className="brainrot-info">
-                <img src={brainrot1} alt="" />
-                <div>
-                  <h3>Emu Etori 3</h3>
-                  <span>30 minutes</span>
-                </div>
-              </div>
-              <p>
-                lots of otori emus, click to get more otori emus, click on new
-                emus to get more otori .
-              </p>
-            </div>
-          </li>
-          <li>
-            <div className="slide">
-              <div className="brainrot-info">
-                <img src={brainrot1} alt="" />
-                <div>
-                  <h3>Emu Etori 4</h3>
-                  <span>30 minutes</span>
-                </div>
-              </div>
-              <p>
-                lots of otori emus, click to get more otori emus, click on new
-                emus to get more otori emus
-              </p>
+              <p>JSP/Servlet java web about manage warranty process.</p>
             </div>
           </li>
         </ul>

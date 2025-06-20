@@ -2,8 +2,9 @@
   margin: 80px auto;
   max-width: 90%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
+  
 }
 
 .contact-col {
@@ -15,6 +16,14 @@
   color: #000f38;
   font-weight: 500;
   font-size: 25px;
+}
+
+.contact-content p {
+  margin: 10px 0px;
+}
+
+.contact-content ul{
+  list-style: none; 
 }
 .contact form input,
 .contact form textarea {
@@ -28,3 +37,5 @@
   margin-top: 5px;
   resize: none;
 }
+
+

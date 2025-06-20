@@ -6,15 +6,10 @@ const Space = () => {
   return (
     <div className="space container">
       <div className="space-text">
-        <h1>About the website </h1>
-        <p>
-          This is my dumb website, I create it to show-off my react skill with
-          employer. Mấy con gà thì biết cái gì. Do what ever you want, who care?
-          Minotaur là người Lai Châu. Việt Nam vô địch
-        </p>
-        <button className="btn">
-          Fuck You <img src={dont_care}></img>
-        </button>
+        <h1>Pham Cong Tra</h1>
+        <h2>Backend developer</h2>
+        <button className="btn">Download CV</button>
+        <button className="btn">Contact Info</button>
       </div>
     </div>
   );

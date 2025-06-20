@@ -17,12 +17,12 @@ const App = () => {
       <div className="container">
         <About />
 
-        <Title title="Skills" subtitle="My current skills, most use" />
+        <Title title="Skills" subtitle="A summary of my technical expertise" />
         <Skills />
 
         <Title
           title="My Project"
-          subtitle="I have fun with it, but it no value"
+          subtitle="Projects that helped me grow"
         />
         <Project />
 
@@ -31,7 +31,6 @@ const App = () => {
 
         <Title title="Contact Me" subtitle="Get in touch with me" />
         <Contact />
-
         <Footer />
       </div>
     </div>

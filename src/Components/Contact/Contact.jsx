@@ -29,18 +29,21 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-col">
-        <h3>Send a message</h3>
-        <p>
-          A random paragraph can also be an excellent way for a writer to tackle
-          writers' block. Writing block can often happen due to being stuck with
-          a current project that the writer is trying to complete.
-        </p>
-        <ul>
-          <li>phamtra001@gmail.com</li>
-          <li>Binh Yen, Thach That, Hoa Lac</li>
-          <li>0123-456-789</li>
-        </ul>
+        <div className="contact-content">
+          <h3>Send a Message</h3>
+          <p>
+            Feel free to reach out! Whether you have a question, want to
+            collaborate, or just want to say hi — I'm always open to
+            conversations.
+          </p>
+          <ul>
+            <li><strong>Email:</strong> phamtra001@gmail.com</li>
+            <li><strong>Location:</strong> Hanoi, Vietnam</li>
+            <li><strong>Phone:</strong> 0947-852-588</li>
+          </ul>
+        </div>
       </div>
+
       <div className="contact-col">
         <form onSubmit={onSubmit}>
           <label htmlFor="">Your Name</label>
