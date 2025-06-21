@@ -11,14 +11,6 @@ nav {
   z-index: 1000;
 }
 
-.logo {
-  width: 50px;
-}
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 nav ul li {
   display: inline-block;
   list-style: none;
@@ -29,6 +21,13 @@ nav ul li {
   outline: 0;
 }
 .dark-nav {
-  background: #212ea0;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);          
+  -webkit-backdrop-filter: blur(10px);  
   transition: 0.5s;
+}
+
+nav{
+  align-items: center;
+  justify-content: center;
 }

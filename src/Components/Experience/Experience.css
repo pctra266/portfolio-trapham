@@ -1,0 +1,87 @@
+.experience-container {
+    color: #fff;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .tab-buttons button {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+  }
+  
+  .tab-buttons button.active {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #fff;
+  }
+  
+  .timeline-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+  }
+  
+  .timeline-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px solid #fff;
+    background-color: #fff;
+  }
+  
+  .timeline-content {
+    max-width: 800px;
+  }
+  
+  .timeline-content .date {
+    font-size: 14px;
+    color: #aaa;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .timeline-content .role {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #ccc;
+  }
+  
+  .timeline-content .description {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.5;
+  }
+  

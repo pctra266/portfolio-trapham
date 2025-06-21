@@ -11,19 +11,11 @@ const Navbar = () => {
   }, []);
   return (
     <nav className={`container ` + (sticky ? "dark-nav" : "")}>
-      <div className="logo-container">
-        <img src={logo} className="logo"></img>
-        <div>TraPham</div>
-      </div>
       <ul>
         <li>Home</li>
-        <li>About me</li>
-        <li>Skills</li>
+        <li>About</li>
         <li>Project</li>
-        <li>Education</li>
-        <li>
-          <button className="btn">Contact me</button>
-        </li>
+        <li>Contact</li>
       </ul>
     </nav>
   );

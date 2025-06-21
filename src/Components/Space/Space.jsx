@@ -1,6 +1,5 @@
 import React from "react";
 import "./Space.css";
-import dont_care from "../../assets/yamada.png";
 
 const Space = () => {
   return (

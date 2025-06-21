@@ -1,114 +1,61 @@
-import React, { useRef } from "react";
-import "./Project.css";
-import next_icon from "../../assets/next-icon.png";
-import back_icon from "../../assets/back-icon.png";
-import brainrot1 from "../../assets/emu.png";
-const BrainrotProject = () => {
-  let slider = useRef();
-  let x = 0;
-  const forward = () => {
-    if (x > -50) {
-      x -= 25;
-      slider.current.style.transform = `translateX(${x}%)`;
-    }
-  };
-  const backward = () => {
-    if (x < 0) {
-      x += 25;
-      slider.current.style.transform = `translateX(${x}%)`;
-    }
-  };
+import React from 'react';
+import './Project.css';
+import ProjectCard from './ProjectCard';
+import ProjectImg from '../../assets/about.png';
 
+const projects = [
+  {
+    title: 'Bright Town Study',
+    description: 'React, Tailwindcss project about learning social media.',
+    client: 'trapham',
+    tags: ['TypeScript', 'React', 'Tailwindcss'],
+    image: '/src/assets/about.png?t=1750490828186',
+    forIcon: 'TraPham',
+    link: '#'
+  },
+  {
+    title: 'DrivingSkillCert',
+    description: 'WPF C#/.net project about exam and manage driving skill certificate',
+    client: 'trapham',
+    tags: ['.NET', 'C#', 'WPF'],
+    image: '/src/assets/about.png?t=1750490828186',
+    forIcon: 'TraPham',
+    link: '#'
+  },
+  {
+    title: 'ProductsMaintainManagement',
+    description: 'JSP/Servlet java web about manage warranty process.',
+    client: 'trapham',
+    tags: ['Java', 'JSP/Servlet','Bootstrap','Javascript'],
+    image: '/src/assets/about.png?t=1750490828186',
+    forIcon: 'TraPham',
+    link: '#'
+  },
+  {
+    title: 'BusSystem',
+    description: 'JSP/Servlet java web about manage bus schedule.',
+    client: 'trapham',
+    tags: ['Java', 'JSP/Servlet'],
+    image: '/src/assets/about.png?t=1750490828186',
+    forIcon: 'TraPham',
+    link: '#'
+  }
+];
+
+const Project = () => {
   return (
-    <div className="brainrot-project">
-      <img src={next_icon} alt="" className="next-btn" onClick={forward} />
-
-      <img src={back_icon} alt="" className="back-btn" onClick={backward} />
-      <div className="slider">
-        <ul ref={slider}>
-          <li>
-            <div className="slide">
-              <div className="brainrot-info">
-                <img src={brainrot1} alt="" />
-                <div>
-                  <h3>Bright Town Study</h3>
-                  <span>
-                    <a
-                      href="https://brighttownstudy.netlify.app"
-                      target="_blank"
-                    >
-                      Try it now
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <p>React, Tailwindcss project about learning social media</p>
-            </div>
-          </li>
-          <li>
-            <div className="slide">
-              <div className="brainrot-info">
-                <img src={brainrot1} alt="" />
-                <div>
-                  <h3>BusSystem</h3>
-                  <span>
-                    <a
-                      href="https://github.com/pctra266/BusSystem"
-                      target="_blank"
-                    >
-                      Github Link
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <p>JSP/Servlet java web about manage bus schedule</p>
-            </div>
-          </li>
-          <li>
-            <div className="slide">
-              <div className="brainrot-info">
-                <img src={brainrot1} alt="" />
-                <div>
-                  <h3>DrivingSkillCert</h3>
-                  <span>
-                    <a
-                      href="https://github.com/pctra266/DrivingSkillCert"
-                      target="_blank"
-                    >
-                      Github Link
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <p>
-                WPF C#/.net project about exam and manage driving skill
-                certificate.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div className="slide">
-              <div className="brainrot-info">
-                <img src={brainrot1} alt="" />
-                <div>
-                  <h3>ProductsMaintainManagement</h3>
-                  <span>
-                    <a
-                      href="https://github.com/pctra266/ProductsMaintainManagement"
-                      target="_blank"
-                    >
-                      Github Link
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <p>JSP/Servlet java web about manage warranty process.</p>
-            </div>
-          </li>
-        </ul>
+    <div className="projects-container">
+      <div className="projects-header">
+        <h2>Projects</h2>
+        <a href="#" className="view-more">View More</a>
+      </div>
+      <div className="project-grid">
+        {projects.map((project, index) => (
+          <ProjectCard project={project} key={index} />
+        ))}
       </div>
     </div>
   );
 };
 
-export default BrainrotProject;
+export default Project;
