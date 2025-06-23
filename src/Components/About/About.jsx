@@ -13,7 +13,7 @@ const About = () => {
         <p>
           I enjoy learning new technology and solving real-world problems by
           developing software. It makes me feel I'm a beneficial person who
-          contributes to society..
+          contributes to society.
         </p>
       </div>
     </div>

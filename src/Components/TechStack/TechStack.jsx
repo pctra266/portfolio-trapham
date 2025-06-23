@@ -4,7 +4,7 @@ import './TechStack.css'; // Import CSS
 const TechStack = () => {
   return (
     <div className="techstack-container">
-     <h2>Experience</h2>
+     <h2>Teck Stack</h2>
       <div className="techstack-table-wrapper">
         <table className="techstack-table">
           <tbody>
