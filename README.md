@@ -4,4 +4,4 @@ Personal website to showcase my skills and projects.
 
 https://traphamportfolio.netlify.app/
 
-![demoweb](https://github.com/user-attachments/assets/8901d6d5-3ba7-473f-a227-fbef94291117)
+![demo](https://github.com/user-attachments/assets/84a54f82-6b45-4c06-8786-dce9dbc5eb80)
