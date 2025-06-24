@@ -1,78 +1,93 @@
 import React from 'react';
-import './TechStack.css'; // Import CSS
-
+import "./TechStack.css"
 const TechStack = () => {
+  const techStackItems = [
+    {
+      name: 'C#',
+      icon: 'https://techstack-generator.vercel.app/csharp-icon.svg',
+      alt: 'C#'
+    },
+    {
+      name: '.NET',
+      icon: 'https://skillicons.dev/icons?i=dotnet',
+      alt: '.NET'
+    },
+    {
+      name: 'JavaScript',
+      icon: 'https://skillicons.dev/icons?i=js',
+      alt: 'JavaScript'
+    },
+    {
+      name: 'HTML5',
+      icon: 'https://skillicons.dev/icons?i=html',
+      alt: 'HTML5'
+    },
+    {
+      name: 'CSS',
+      icon: 'https://skillicons.dev/icons?i=css',
+      alt: 'CSS'
+    },
+    {
+      name: 'Bootstrap',
+      icon: 'https://skillicons.dev/icons?i=bootstrap',
+      alt: 'Bootstrap'
+    },
+    {
+      name: 'React',
+      icon: 'https://skillicons.dev/icons?i=react',
+      alt: 'React'
+    },
+    {
+      name: 'Java',
+      icon: 'https://skillicons.dev/icons?i=java',
+      alt: 'Java'
+    },
+    {
+      name: 'Postman',
+      icon: 'https://skillicons.dev/icons?i=postman',
+      alt: 'Postman'
+    },
+    {
+      name: 'Git',
+      icon: 'https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png',
+      alt: 'Git'
+    },
+    {
+      name: 'GitHub',
+      icon: 'https://skillicons.dev/icons?i=github',
+      alt: 'GitHub'
+    },
+    {
+      name: 'VS Code',
+      icon: 'https://skillicons.dev/icons?i=vscode',
+      alt: 'VS Code'
+    },
+    {
+      name: 'VS2022',
+      icon: 'https://skillicons.dev/icons?i=visualstudio',
+      alt: 'Visual Studio'
+    },
+    {
+      name: 'Node.js',
+      icon: 'https://skillicons.dev/icons?i=nodejs',
+      alt: 'Node.js'
+    }
+  ];
+
   return (
     <div className="techstack-container">
-     <h2>Teck Stack</h2>
-      <div className="techstack-table-wrapper">
-        <table className="techstack-table">
-          <tbody>
-            <tr>
-              <td>
-                <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="C#" />
-                <br />C#
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=dotnet" alt=".NET" />
-                <br />.NET
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
-                <br />JavaScript
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=html" alt="HTML5" />
-                <br />HTML5
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
-                <br />CSS
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" />
-                <br />Bootstrap
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=react" alt="React" />
-                <br />React
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="https://skillicons.dev/icons?i=java" alt="Java" />
-                <br />Java
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=postman" alt="Postman" />
-                <br />Postman
-              </td>
-              <td>
-                <img
-                  src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"
-                  alt="Git"
-                />
-                <br />Git
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
-                <br />GitHub
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" />
-                <br />VS Code
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=visualstudio" alt="Visual Studio" />
-                <br />VS2022
-              </td>
-              <td>
-                <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
-                <br />Node.js
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <h2 className="techstack-title">Tech Stack</h2>
+      <div className="techstack-grid">
+        {techStackItems.map((item, index) => (
+          <div key={index} className="techstack-item">
+            <img 
+              src={item.icon} 
+              alt={item.alt}
+              className="techstack-icon"
+            />
+            <span className="techstack-name">{item.name}</span>
+          </div>
+        ))}
       </div>
     </div>
   );

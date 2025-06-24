@@ -7,8 +7,9 @@
   font-family: "Outfit", sans-serif;
 }
 body {
-  background: #170F36;
+  background: black;
 }
+
 
 a {
   text-decoration: none;
@@ -20,6 +21,7 @@ a {
 .container {
   padding-left: 10%;
   padding-right: 10%;
+ 
 }
 
 .btn {

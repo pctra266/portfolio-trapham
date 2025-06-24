@@ -1,21 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
-const Navbar = () => {
+const Navbar = ({ onNavClick, scroll }) => {
   const [sticky, setSticky] = useState(false);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY > 50 ? setSticky(true) : setSticky(false);
+    if (!scroll) return;
+
+    scroll.on("scroll", (obj) => {
+      const scrollY = obj.scroll.y;
+      setSticky(scrollY > 50);
     });
-  }, []);
+
+    return () => {
+      scroll.off("scroll");
+    };
+  }, [scroll]);
+
   return (
-    <nav className={`container ` + (sticky ? "dark-nav" : "")}>
+    <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Project</li>
-        <li>Contact</li>
+        <li onClick={() => onNavClick("space")}>Home</li>
+        <li onClick={() => onNavClick("about")}>About</li>
+        <li onClick={() => scroll.scrollTo("project")}>Project</li>
+        <li onClick={() => scroll.scrollTo("footer")}>Contact</li>
       </ul>
     </nav>
   );

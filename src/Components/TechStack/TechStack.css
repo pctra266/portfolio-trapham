@@ -1,34 +1,141 @@
-.techstack-container {
-  color: #fff;
-  padding: 40px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  .techstack-container {
+    color: #fff;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(
+    circle at 80% center,
+    rgba(138, 43, 226, 0.3) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  .techstack-table-wrapper {
+  .techstack-title {
+    /* text-align: center; */
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  
+  .techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .techstack-item {
     display: flex;
-    justify-content: center;
-  }
-  
-  .techstack-table {
-    border-spacing: 20px;
-  }
-  
-  .techstack-table td {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    max-width: 140px;
     text-align: center;
-    width: 100px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: white;
   }
   
-  .techstack-table img {
+  .techstack-item:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .techstack-icon {
     width: 48px;
     height: 48px;
     object-fit: contain;
     transition: transform 0.3s ease;
   }
   
-  .techstack-table img:hover {
-    transform: scale(1.2);
+  .techstack-item:hover .techstack-icon {
+    transform: scale(1.1);
   }
   
+  .techstack-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  /* Responsive breakpoints */
+  @media (max-width: 768px) {
+    .techstack-container {
+      padding: 30px 15px;
+    }
+    
+    .techstack-title {
+      font-size: 1.75rem;
+      margin-bottom: 30px;
+    }
+    
+    .techstack-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+    }
+    
+    .techstack-item {
+      padding: 15px;
+      max-width: 120px;
+    }
+    
+    .techstack-icon {
+      width: 42px;
+      height: 42px;
+    }
+    
+    .techstack-name {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .techstack-container {
+      padding: 20px 10px;
+    }
+    
+    .techstack-title {
+      font-size: 1.5rem;
+      margin-bottom: 25px;
+    }
+    
+    .techstack-grid {
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      gap: 15px;
+    }
+    
+    .techstack-item {
+      padding: 12px;
+      max-width: 100px;
+    }
+    
+    .techstack-icon {
+      width: 36px;
+      height: 36px;
+    }
+    
+    .techstack-name {
+      font-size: 0.75rem;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1200px) {
+    .techstack-grid {
+      grid-template-columns: repeat(7, 1fr);
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }

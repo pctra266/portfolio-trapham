@@ -25,7 +25,6 @@ const Footer = () => {
               <li><a href="#">Email</a></li>
               <li><a href="#">LinkedIn</a></li>
               <li><a href="#">GitHub</a></li>
-              <li><a href="#">Instagram</a></li>
             </ul>
           </div>
         </div>

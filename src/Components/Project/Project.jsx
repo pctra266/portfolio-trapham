@@ -47,7 +47,7 @@ const Project = () => {
     <div className="projects-container">
       <div className="projects-header">
         <h2>Projects</h2>
-        <a href="#" className="view-more">View More</a>
+        {/* <a href="#" className="view-more">View More</a> */}
       </div>
       <div className="project-grid">
         {projects.map((project, index) => (
