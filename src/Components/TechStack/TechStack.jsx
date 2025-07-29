@@ -18,19 +18,14 @@ const TechStack = () => {
       alt: 'JavaScript'
     },
     {
-      name: 'HTML5',
-      icon: 'https://skillicons.dev/icons?i=html',
-      alt: 'HTML5'
+      name: 'TypeScript',
+      icon: 'https://skillicons.dev/icons?i=ts',
+      alt: 'TypeScript'
     },
     {
-      name: 'CSS',
-      icon: 'https://skillicons.dev/icons?i=css',
-      alt: 'CSS'
-    },
-    {
-      name: 'Bootstrap',
-      icon: 'https://skillicons.dev/icons?i=bootstrap',
-      alt: 'Bootstrap'
+      name: 'Tailwind',
+      icon: 'https://skillicons.dev/icons?i=tailwind',
+      alt: 'Tailwind'
     },
     {
       name: 'React',
@@ -43,6 +38,16 @@ const TechStack = () => {
       alt: 'Java'
     },
     {
+      name: 'Spring',
+      icon: 'https://skillicons.dev/icons?i=spring',
+      alt: 'Spring'
+    },
+    {
+      name: 'Hibernate',
+      icon: 'https://skillicons.dev/icons?i=hibernate',
+      alt: 'Hibernate'
+    },
+    {
       name: 'Postman',
       icon: 'https://skillicons.dev/icons?i=postman',
       alt: 'Postman'
@@ -53,26 +58,12 @@ const TechStack = () => {
       alt: 'Git'
     },
     {
-      name: 'GitHub',
-      icon: 'https://skillicons.dev/icons?i=github',
-      alt: 'GitHub'
-    },
-    {
-      name: 'VS Code',
-      icon: 'https://skillicons.dev/icons?i=vscode',
-      alt: 'VS Code'
-    },
-    {
-      name: 'VS2022',
-      icon: 'https://skillicons.dev/icons?i=visualstudio',
-      alt: 'Visual Studio'
-    },
-    {
-      name: 'Node.js',
-      icon: 'https://skillicons.dev/icons?i=nodejs',
-      alt: 'Node.js'
+      name: 'MySQL',
+      icon: 'https://skillicons.dev/icons?i=mysql',
+      alt: 'MySQL'
     }
   ];
+  
 
   return (
     <div className="techstack-container">
