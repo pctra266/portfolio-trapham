@@ -26,7 +26,7 @@ const Navbar = ({ onNavClick, scroll }) => {
         <li onClick={() => handleSwitchTab("space")}>Home</li>
         <li onClick={() => handleSwitchTab("about")}>About</li>
         
-        <li onClick={() => scroll.scrollTo("#project")}>Project</li>
+        {/* <li onClick={() => scroll.scrollTo("#project")}>Project</li> */}
         <li onClick={() => scroll.scrollTo("#contact")}>Contact</li>
       </ul>
     </nav>
