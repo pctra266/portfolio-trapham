@@ -63,10 +63,10 @@ const App = () => {
         <section data-scroll-section id="project">
           <Project />
         </section>
-        <section data-scroll-section >
+        <section data-scroll-section id="contact">
           <Contact />
         </section>
-        <section data-scroll-section id="footer">
+        <section data-scroll-section >
           <Footer />
         </section>
       </div>

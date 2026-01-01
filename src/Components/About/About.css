@@ -1,37 +1,163 @@
-.about {
-  margin: 100px auto;
+/* Container chính */
+.about-container {
+  width: 100%;
+  padding: 80px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* Nếu bạn muốn background nối tiếp phần trên, có thể bỏ dòng này */
+  /* background: #050505;  */
+}
+
+.about-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  max-width: 1000px;
+  width: 100%;
+  gap: 50px;
 }
 
+/* --- Phần Trái (Ảnh) --- */
 .about-left {
-  flex-basis: 40%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
-.about-right {
-  flex-basis: 56%;
+
+/* Tạo khung ảnh phong cách thẻ bài/kính */
+.image-card {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05); /* Hiệu ứng kính */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(138, 43, 226, 0.5); /* Màu tím khi hover */
 }
 
 .about-img {
   width: 100%;
-  border-radius: 10px;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  filter: brightness(0.9);
 }
 
-.about-right h3 {
+/* --- Phần Phải (Nội dung) --- */
+.about-right {
+  flex: 1.2;
+}
+
+/* Subtitle nhỏ màu tím */
+.section-subtitle {
+  font-size: 16px;
   font-weight: 600;
-  font-weight: 16px;
-  color: white;
-}
-.about-right h2 {
-  font-size: 35px;
-  color: white;
-  margin: 10px 0;
-  max-width: 400px;
+  color: #8a2be2; /* Màu tím giống Hero */
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-.about p {
-  color: white;
+/* Title lớn */
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.section-title .highlight {
+  background: linear-gradient(45deg, #fff, #a29bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hộp nội dung văn bản */
+.text-box {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 3px solid #8a2be2; /* Viền tím bên trái */
+  backdrop-filter: blur(5px);
+  margin-bottom: 30px;
+}
+
+.text-box p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8); /* Màu xám nhạt dễ đọc */
+  line-height: 1.6;
   margin-bottom: 15px;
+}
+
+.text-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Stats (Phần chỉ số phụ) */
+.about-stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-num {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat-desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column; /* Chuyển thành 1 cột */
+    text-align: center;
+  }
+
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-box {
+    text-align: left; /* Text bên trong vẫn căn trái cho dễ đọc */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 30px;
+  }
+  
+  .about-img {
+    max-width: 100%;
+  }
+
+  .about-stats {
+    gap: 20px;
+    justify-content: center;
+  }
 }
