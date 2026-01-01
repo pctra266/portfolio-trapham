@@ -9,6 +9,9 @@ import Project from "./Components/Project/Project.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import TechStack from "./Components/TechStack/TechStack.jsx";
 import Experience from "./Components/Experience/Experience.jsx";
+import Education from "./Components/Education/Education.jsx";
+import Achievement from "./Components/Achievement/Achievement.jsx";
+import Certificates from "./Components/Certificates/Certificates.jsx";
 
 const App = () => {
   const [currentSection, setCurrentSection] = useState("space");
@@ -45,7 +48,13 @@ const App = () => {
 
       <div className="container">
         <section data-scroll-section>
-          <Experience />
+          <Education />
+        </section>
+        <section data-scroll-section>
+          <Achievement />
+        </section>
+        <section data-scroll-section>
+          <Certificates />
         </section>
         <section data-scroll-section>
           <TechStack />

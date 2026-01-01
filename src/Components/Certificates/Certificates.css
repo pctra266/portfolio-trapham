@@ -1,0 +1,65 @@
+.certificates-container {
+    color: #fff;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+  
+.certificates-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+
+.certificates-header h2 {
+    font-size: 28px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.certificates-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.certificate-item {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+/* Style cho các link chính (Tên chứng chỉ) */
+.main-link {
+    color: #61dafb; /* Màu xanh chủ đạo */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    border-bottom: 1px dotted transparent;
+}
+
+.main-link:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.main-link strong {
+    font-weight: 600;
+}
+
+/* Style cho các kỹ năng phụ (Agile, Lean, etc.) */
+.sub-skills a {
+    color: #9cdcf0; /* Màu xanh nhạt hơn một chút để phân biệt */
+    text-decoration: none;
+    font-style: italic; /* Giống lệnh \emph trong Latex */
+}
+
+.sub-skills a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

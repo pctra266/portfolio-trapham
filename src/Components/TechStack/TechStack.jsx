@@ -1,16 +1,19 @@
 import React from 'react';
-import "./TechStack.css"
+import "./TechStack.css";
+
 const TechStack = () => {
+  // Dữ liệu được map chính xác từ section Technical Skills trong Latex
   const techStackItems = [
+    // --- Languages ---
     {
       name: 'C#',
-      icon: 'https://techstack-generator.vercel.app/csharp-icon.svg',
+      icon: 'https://skillicons.dev/icons?i=cs',
       alt: 'C#'
     },
     {
-      name: '.NET',
-      icon: 'https://skillicons.dev/icons?i=dotnet',
-      alt: '.NET'
+      name: 'Java',
+      icon: 'https://skillicons.dev/icons?i=java',
+      alt: 'Java'
     },
     {
       name: 'JavaScript',
@@ -23,29 +26,63 @@ const TechStack = () => {
       alt: 'TypeScript'
     },
     {
-      name: 'Tailwind',
-      icon: 'https://skillicons.dev/icons?i=tailwind',
-      alt: 'Tailwind'
+      name: 'Dart',
+      icon: 'https://skillicons.dev/icons?i=dart',
+      alt: 'Dart'
     },
     {
-      name: 'React',
+      name: 'SQL',
+      icon: 'https://skillicons.dev/icons?i=mysql', // Dùng icon đại diện cho SQL
+      alt: 'SQL'
+    },
+    {
+      name: 'HTML5',
+      icon: 'https://skillicons.dev/icons?i=html',
+      alt: 'HTML'
+    },
+    {
+      name: 'CSS3',
+      icon: 'https://skillicons.dev/icons?i=css',
+      alt: 'CSS'
+    },
+
+    // --- Frameworks ---
+    {
+      name: '.NET Core',
+      icon: 'https://skillicons.dev/icons?i=dotnet',
+      alt: '.NET Core'
+    },
+    {
+      name: 'ASP.NET',
+      icon: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg', // Icon .NET gốc
+      alt: 'ASP.NET'
+    },
+    {
+      name: 'React.js',
       icon: 'https://skillicons.dev/icons?i=react',
-      alt: 'React'
+      alt: 'React.js'
     },
     {
-      name: 'Java',
-      icon: 'https://skillicons.dev/icons?i=java',
-      alt: 'Java'
-    },
-    {
-      name: 'Spring',
+      name: 'Spring Boot',
       icon: 'https://skillicons.dev/icons?i=spring',
-      alt: 'Spring'
+      alt: 'Spring Boot'
     },
     {
-      name: 'Hibernate',
-      icon: 'https://skillicons.dev/icons?i=hibernate',
-      alt: 'Hibernate'
+      name: 'Unity',
+      icon: 'https://skillicons.dev/icons?i=unity',
+      alt: 'Unity'
+    },
+    {
+      name: 'Flutter',
+      icon: 'https://skillicons.dev/icons?i=flutter',
+      alt: 'Flutter'
+    },
+
+    // --- Developer Tools ---
+    {
+      name: 'Git',
+      icon: 'https://skillicons.dev/icons?i=git',
+      alt: 'Git'
     },
     {
       name: 'Postman',
@@ -53,21 +90,33 @@ const TechStack = () => {
       alt: 'Postman'
     },
     {
-      name: 'Git',
-      icon: 'https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png',
-      alt: 'Git'
+      name: 'Visual Studio',
+      icon: 'https://skillicons.dev/icons?i=visualstudio',
+      alt: 'Visual Studio'
     },
     {
-      name: 'MySQL',
-      icon: 'https://skillicons.dev/icons?i=mysql',
-      alt: 'MySQL'
+      name: 'VS Code',
+      icon: 'https://skillicons.dev/icons?i=vscode',
+      alt: 'VS Code'
+    },
+    {
+      name: 'IntelliJ',
+      icon: 'https://skillicons.dev/icons?i=idea',
+      alt: 'IntelliJ IDEA'
+    },
+    {
+      name: 'SQL Server (SSMS)',
+      icon: 'https://skillicons.dev/icons?i=mssql', // Khớp với SQL Server Management Studio
+      alt: 'SSMS'
     }
   ];
-  
 
   return (
     <div className="techstack-container">
-      <h2 className="techstack-title">Tech Stack</h2>
+      <div className="techstack-header">
+         <h2>Technical Skills</h2>
+      </div>
+      
       <div className="techstack-grid">
         {techStackItems.map((item, index) => (
           <div key={index} className="techstack-item">
@@ -75,6 +124,7 @@ const TechStack = () => {
               src={item.icon} 
               alt={item.alt}
               className="techstack-icon"
+              loading="lazy"
             />
             <span className="techstack-name">{item.name}</span>
           </div>

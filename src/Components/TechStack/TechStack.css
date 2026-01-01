@@ -1,141 +1,106 @@
-  .techstack-container {
-    color: #fff;
-    padding: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(
+.techstack-container {
+  color: #fff;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Giữ background gradient đẹp mắt của bạn */
+  background: radial-gradient(
     circle at 80% center,
-    rgba(138, 43, 226, 0.3) 0%,
-    rgba(0, 0, 0, 1) 20%
+    rgba(138, 43, 226, 0.15) 0%, /* Giảm opacity chút cho đỡ gắt nền */
+    rgba(0, 0, 0, 0) 40%
   );
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1000px; /* Đồng bộ max-width với các component khác */
+  margin: 0 auto;
+}
+
+/* Style Header đồng bộ với Education/Achievement */
+.techstack-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+.techstack-header h2 {
+  font-size: 28px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.techstack-grid {
+  display: grid;
+  /* Tự động chia cột, tối thiểu 110px mỗi cột */
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.techstack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05); /* Hiệu ứng kính mờ */
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: default;
+  width: 100%;
+  height: 100%; /* Đảm bảo các thẻ cao bằng nhau */
+}
+
+.techstack-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(97, 218, 251, 0.5); /* Viền sáng màu xanh React khi hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.techstack-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.techstack-item:hover .techstack-icon {
+  transform: scale(1.15); /* Phóng to icon nhẹ khi hover */
+}
+
+.techstack-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .techstack-container {
+      padding: 30px 20px;
   }
   
-  .techstack-title {
-    /* text-align: center; */
-    margin-bottom: 40px;
-    font-size: 2rem;
-    font-weight: 600;
+  .techstack-header h2 {
+      font-size: 24px;
   }
-  
   
   .techstack-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 30px;
-    justify-items: center;
-    align-items: center;
-  }
-  
-  .techstack-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding: 20px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-    width: 100%;
-    max-width: 140px;
-    text-align: center;
-  }
-  
-  .techstack-item:hover {
-    transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+      gap: 15px;
   }
   
   .techstack-icon {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-  }
-  
-  .techstack-item:hover .techstack-icon {
-    transform: scale(1.1);
+      width: 35px;
+      height: 35px;
   }
   
   .techstack-name {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-    line-height: 1.2;
-  }
-  
-  /* Responsive breakpoints */
-  @media (max-width: 768px) {
-    .techstack-container {
-      padding: 30px 15px;
-    }
-    
-    .techstack-title {
-      font-size: 1.75rem;
-      margin-bottom: 30px;
-    }
-    
-    .techstack-grid {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 20px;
-    }
-    
-    .techstack-item {
-      padding: 15px;
-      max-width: 120px;
-    }
-    
-    .techstack-icon {
-      width: 42px;
-      height: 42px;
-    }
-    
-    .techstack-name {
       font-size: 0.8rem;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .techstack-container {
-      padding: 20px 10px;
-    }
-    
-    .techstack-title {
-      font-size: 1.5rem;
-      margin-bottom: 25px;
-    }
-    
-    .techstack-grid {
-      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-      gap: 15px;
-    }
-    
-    .techstack-item {
-      padding: 12px;
-      max-width: 100px;
-    }
-    
-    .techstack-icon {
-      width: 36px;
-      height: 36px;
-    }
-    
-    .techstack-name {
-      font-size: 0.75rem;
-    }
-  }
-  
-  /* Large screens */
-  @media (min-width: 1200px) {
-    .techstack-grid {
-      grid-template-columns: repeat(7, 1fr);
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-  }
+}

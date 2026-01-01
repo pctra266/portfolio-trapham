@@ -1,0 +1,57 @@
+.achievement-container {
+    color: #fff;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+  
+.achievement-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444; /* Đường kẻ phân cách */
+    padding-bottom: 10px;
+}
+
+.achievement-header h2 {
+    font-size: 28px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Định dạng danh sách */
+.achievement-list {
+    list-style-type: disc; /* Dấu chấm tròn truyền thống */
+    padding-left: 20px; /* Thụt đầu dòng */
+    margin-top: 10px;
+}
+
+/* Định dạng từng item */
+.achievement-item {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Khoảng cách giữa các giải thưởng */
+    color: #e0e0e0; /* Màu chữ nội dung hơi nhạt hơn màu trắng tinh */
+}
+
+/* Định dạng link (Tiêu đề giải thưởng) */
+.achievement-link {
+    color: #61dafb; /* Màu xanh React */
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px dotted transparent;
+}
+
+.achievement-link:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff; /* Hiệu ứng hover giống Education */
+}
+
+/* Định dạng các từ khóa quan trọng (thẻ strong bên trong text thường) */
+.achievement-item strong {
+    color: #fff;
+    font-weight: 600;
+}

@@ -1,0 +1,93 @@
+.education-container {
+    color: #fff; /* Màu chữ chính, giả sử nền web tối */
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px; /* Giới hạn chiều rộng để dễ đọc hơn trên màn hình lớn */
+    margin: 0 auto;
+  }
+  
+  .education-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #444; /* Thêm đường kẻ dưới tiêu đề giống LaTeX */
+    padding-bottom: 10px;
+  }
+  
+  .education-header h2 {
+    font-size: 28px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Phần bao quanh mỗi mục Education */
+  .education-item {
+    margin-bottom: 30px;
+  }
+  
+  /* Flexbox để đẩy nội dung sang 2 bên (Trái - Phải) */
+  .education-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; /* Căn chỉnh theo dòng kẻ chữ */
+    margin-bottom: 5px;
+  }
+  
+  /* Hàng tiêu đề (Tên trường) */
+  .header-row .school-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .header-row .location {
+    font-size: 16px;
+    font-style: italic;
+    color: #ccc; /* Màu nhạt hơn cho địa điểm */
+  }
+  
+  /* Hàng phụ (Ngành học - Thời gian) */
+  .sub-header-row .degree {
+    font-size: 16px;
+    font-weight: 600; /* Semi-bold */
+  }
+  
+  .sub-header-row .date {
+    font-size: 16px;
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  /* Danh sách chi tiết (GPA, Awards) */
+  .education-details {
+    list-style-type: disc; /* Dấu chấm tròn */
+    margin-top: 10px;
+    padding-left: 20px; /* Thụt đầu dòng */
+  }
+  
+  .education-details li {
+    font-size: 15px;
+    line-height: 1.6; /* Tăng khoảng cách dòng cho dễ đọc */
+    margin-bottom: 5px;
+  }
+  
+  /* Style cho các đường link */
+  .education-details a {
+    color: #61dafb; /* Màu xanh React hoặc màu highlight bạn thích */
+    text-decoration: none;
+    transition: color 0.2s;
+    border-bottom: 1px dotted #61dafb; /* Gạch chân nhẹ */
+  }
+  
+  .education-details a:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+  }
+  
+  /* Highlight đặc biệt cho GPA nếu cần */
+  .highlight-link strong {
+    color: #ffc107; /* Màu vàng nổi bật cho số điểm */
+  }
