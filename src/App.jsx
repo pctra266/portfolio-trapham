@@ -12,6 +12,7 @@ import Experience from "./Components/Experience/Experience.jsx";
 import Education from "./Components/Education/Education.jsx";
 import Achievement from "./Components/Achievement/Achievement.jsx";
 import Certificates from "./Components/Certificates/Certificates.jsx";
+import Contact from "./Components/Contact/Contact.jsx";
 
 const App = () => {
   const [currentSection, setCurrentSection] = useState("space");
@@ -61,6 +62,9 @@ const App = () => {
         </section>
         <section data-scroll-section id="project">
           <Project />
+        </section>
+        <section data-scroll-section >
+          <Contact />
         </section>
         <section data-scroll-section id="footer">
           <Footer />

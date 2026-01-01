@@ -1,0 +1,147 @@
+.contact {
+    color: #fff;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: flex-start;
+  }
+  
+  /* --- Cột Thông Tin (Bên Trái) --- */
+  .contact-col {
+    flex-basis: 50%;
+  }
+  
+  .contact-col h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #61dafb; /* Màu xanh React làm điểm nhấn */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-desc {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+  
+  .contact-details {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #eee;
+  }
+  
+  .contact-details li svg {
+    margin-right: 15px;
+    color: #61dafb; /* Màu icon */
+    width: 22px;
+    height: 22px;
+  }
+  
+  /* --- Cột Form (Bên Phải) --- */
+  .form-col form {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.05); /* Nền mờ nhẹ cho form */
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .form-col label {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .form-col input, 
+  .form-col textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1); /* Input nền tối hơn */
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    font-family: inherit;
+  }
+  
+  /* Hiệu ứng khi click vào input */
+  .form-col input:focus, 
+  .form-col textarea:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #61dafb;
+  }
+  
+  .form-col textarea {
+    resize: vertical; /* Chỉ cho phép kéo giãn chiều dọc */
+  }
+  
+  .submit-btn {
+    background: linear-gradient(90deg, #61dafb 0%, #21a1f1 100%);
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    align-self: flex-start; /* Nút nằm bên trái */
+    box-shadow: 0 4px 15px rgba(33, 161, 241, 0.3);
+  }
+  
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(33, 161, 241, 0.5);
+  }
+  
+  /* Thông báo kết quả */
+  .form-result {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #61dafb;
+  }
+  
+  /* --- Responsive --- */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .contact-col {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  
+    .form-col form {
+      padding: 20px;
+    }
+  
+    .contact-col h3 {
+      font-size: 28px;
+    }
+  }
