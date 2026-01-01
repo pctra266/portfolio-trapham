@@ -2,6 +2,8 @@ import React from 'react';
 import './Project.css';
 import ProjectCard from './ProjectCard';
 import ProjectImg from '../../assets/about.png'; // Đảm bảo đường dẫn ảnh đúng
+import knowhubImg from "../../assets/knowhub.png";
+import certCarImg from "../../assets/certCar.png";
 
 const projects = [
   {
@@ -9,7 +11,7 @@ const projects = [
     date: 'Sep 2025 -- Nov 2025',
     link: 'https://github.com/hoangvanduc2k4/OnlineLearningPlatform',
     tags: ['ASP.NET Core', 'SignalR', 'EF Core', 'SQL'],
-    image: ProjectImg, 
+    image: knowhubImg, 
     highlights: [
       'Built a comprehensive E-learning platform connecting Mentors and Mentees (Team of 5).',
       'Led the Database Design (ERD) for 20+ entities including Courses, Quizzes, and Transactions.',
@@ -22,7 +24,7 @@ const projects = [
     date: 'Jan 2025 -- Mar 2025',
     link: 'https://github.com/pctra266/DrivingSkillCert',
     tags: ['C#', 'WPF', '.NET', 'SQL Server'],
-    image: ProjectImg,
+    image: certCarImg,
     highlights: [
       'Developing a desktop application for managing driving course registrations (Team of 3).',
       'Implemented Layered Architecture ensuring clean code separation.',
