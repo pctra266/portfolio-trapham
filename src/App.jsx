@@ -12,7 +12,7 @@ import Experience from "./Components/Experience/Experience.jsx";
 
 const App = () => {
   const [currentSection, setCurrentSection] = useState("space");
-  const [scrollInstance, setScrollInstance] = useState(null); // ✅ thêm dòng này
+  const [scrollInstance, setScrollInstance] = useState(null); 
 
   useEffect(() => {
     const scroll = new LocomotiveScroll({

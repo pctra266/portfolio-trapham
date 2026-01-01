@@ -40,7 +40,7 @@ const Space = () => {
         {/* Contact Icons */}
         <div className="contact-icons">
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/trapham266"
             target="_blank"
             rel="noopener noreferrer"
             className="icon-link"
@@ -51,7 +51,7 @@ const Space = () => {
             </svg>
           </a>
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/pctra266"
             target="_blank"
             rel="noopener noreferrer"
             className="icon-link"
@@ -63,7 +63,7 @@ const Space = () => {
           </a>
 
           <a
-            href="mailto:your-email@gmail.com"
+            href="mailto:trapham.dev@gmail.com"
             className="icon-link"
             title="Gmail"
           >
@@ -73,13 +73,13 @@ const Space = () => {
           </a>
 
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1eDwCltHbQGesFGooAPlKuH_13mTNpKAS/view?usp=sharing"
+            target="_blank"
             className="icon-link cv-icon"
             title="Download CV"
           >
             <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M14,17H7V15H14M17,13H7V11H17M17,9H7V7H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" />
-              <path d="M12,15L8,11H11V7H13V11H16L12,15Z" />
+              <path d="M14,2H6C4.89,2 4,2.89 4,4V20C4,21.11 4.89,22 6,22H18C19.11,22 20,21.11 20,20V8L14,2M12,17L8,13H11V9H13V13H16L12,17M13,9V3.5L18.5,9H13Z" />
             </svg>
           </a>
         </div>
