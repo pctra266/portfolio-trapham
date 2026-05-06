@@ -73,7 +73,7 @@ const Space = () => {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1eDwCltHbQGesFGooAPlKuH_13mTNpKAS/view?usp=sharing"
+            href="https://drive.google.com/file/d/1rdbIVpIfBlwNBEMfjjU1D3PbTDaKpAQ5/view?usp=sharing"
             target="_blank"
             className="icon-link cv-icon"
             title="Download CV"
