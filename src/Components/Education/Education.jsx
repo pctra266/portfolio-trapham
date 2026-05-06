@@ -11,7 +11,7 @@ const Education = () => {
       <div className="education-content">
         {/* Mục 1: FPT University */}
         <div className="education-item">
-          
+
           {/* Hàng 1: Trường + Địa điểm */}
           <div className="education-row header-row">
             <h3 className="school-name">FPT University Ha Noi</h3>
@@ -29,12 +29,12 @@ const Education = () => {
             <li>
               GPA:{" "}
               <a
-                href="https://docs.google.com/spreadsheets/d/1On0Y4D_ffrGNtLEqIFFGdK0qSJ-IlUoG/edit?usp=drive_link&ouid=110479207289921815762&rtpof=true&sd=true"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="highlight-link"
               >
-                <strong>8.44/10</strong>
+                <strong>8.52/10</strong>
               </a>
             </li>
             <li>
